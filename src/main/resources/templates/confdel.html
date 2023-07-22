@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form th:action="@{/delproc}" th:object=${std} method="get">
+		
+		
+		id:
+		<input type="text" th:field="*{id}"><br>
+		name:
+		<input type="text" th:field="*{name}"><br>
+		date:
+		<input type="date" th:field="*{dob}"><br>
+		department:
+		<input type="text" th:field="*{department}"><br>
+		<input type="submit" value="submit"> <br>
+		<a th:href="@{/view}"> cancel</a>
+	
+	</form>
+</body>
+</html>
